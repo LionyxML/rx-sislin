@@ -13,7 +13,12 @@ Binaries:
 
 Screenshot
 ----------
+Example:
+
 ![Main Screen - Windows](images/1.png)
 
+Animated:
+
+![Animated](images/2.gif)
 
 
