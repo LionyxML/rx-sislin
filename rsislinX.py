@@ -1,9 +1,9 @@
-#!/usr/bin/python3
+#!/usr/local/bin/python3
 # Arquivo : rsislinX.py
 # Programa: Solucionador de Sistmas Lineares para o X
 # Autor   : Rahul Martim Juliato
 # Versão  : 0.1  -  17.04.2018
-
+# Versão  : 0.2  -  02.08.2019 - Suporte ao MacOS
 
 #---===[0. Bibliotecas]===---
 import tkinter as tk
@@ -44,7 +44,7 @@ def sobre():
 r[SISLIN]X
 Solucionador de Sistemas Lineares
 
-Versão: 0.1
+Versão: 0.2
 
 Autor: Rahul Martim Juliato
 (rahul.juliato@gmail.com)
@@ -233,6 +233,11 @@ def parteinferior():
     separador.grid(sticky = 'EW', pady = 10, columnspan = tamanho_A * 3 , row = tamanho_A + 1)
     lab_resposta.grid(sticky = 'W', row = tamanho_A + 2, column = 0)
     ent_resposta.grid(sticky = 'EW', row = tamanho_A + 3, columnspan = tamanho_A * 3)
+    bot_mais.grid(sticky = 'EW', row = tamanho_A + 4, column=0)
+    bot_menos.grid(sticky = 'EW', row = tamanho_A + 4, column=2)
+    bot_calcula.grid(sticky = 'EW', row = tamanho_A + 5, columnspan = 3)
+    chk_eng.grid(sticky = 'W', row = tamanho_A + 6)
+    
 
     
 def destroi(col, lin):
@@ -260,7 +265,7 @@ def destroi(col, lin):
 # 2.0. Definições principais da janela
 janela = tk.Tk()
 #janela.geometry("500x200")
-janela.wm_title('r[SISLIN]X v0.1')
+janela.wm_title('r[SISLIN]X v0.2')
 janela.wm_minsize(380,220)
 janela.grid_anchor(anchor='c')
 #janela.tk_setPalette('gray')
@@ -297,8 +302,10 @@ geravetor(tamanho_A)
 separador = tk.ttk.Separator()
 ent_resposta = tk.Entry(janela)
 lab_resposta = tk.Label(janela, text="Soluções: ")
-
-
+bot_mais = tk.Button(janela, text="+", command=aumenta)
+bot_menos = tk.Button(janela, text="-", command=diminui)
+bot_calcula = tk.Button(janela, text="Calcular", command=  lambda: calcula(tamanho_A,tamanho_A))
+chk_eng = tk.Checkbutton(janela, text="ENG", command=engenharia)
 parteinferior()
 
 

@@ -9,11 +9,14 @@ Features:
 - Engineering mode or 8 decimal figures precision
 
 Binaries:
-- Binaries are provided for Windows 10 - 64bits 
+- Windows 10 - 64bits 
+- MacOS Mojave
 
 Screenshot
 ----------
 Example:
+
+![Main Screen - MacOS](images/3.png)
 
 ![Main Screen - Windows](images/1.png)
 
