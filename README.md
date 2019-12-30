@@ -1,4 +1,4 @@
-rx - SisLin - Linear System Solver
+rx-sislin  -  Linear System Solver
 ----------------------------------
 
 This is a python3/tk software capable of solving up to 10 variables/equations in a Linear System.
