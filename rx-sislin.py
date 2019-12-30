@@ -1,9 +1,10 @@
 #!/usr/local/bin/python3
-# Arquivo : rsislinX.py
+# Arquivo : rx-sislin.py
 # Programa: Solucionador de Sistmas Lineares para o X
 # Autor   : Rahul Martim Juliato
 # Versão  : 0.1  -  17.04.2018
 # Versão  : 0.2  -  02.08.2019 - Suporte ao MacOS
+# Versão  : 0.3  -  29.12.2019 - Mudança de nome para rs-sislinx (antigo rSisLinx)
 
 #---===[0. Bibliotecas]===---
 import tkinter as tk
@@ -39,15 +40,16 @@ def engenharia():
 def sobre():
     """ Mostra as informações do programa
     """
-    mb.showinfo("r[SISLIN]X",'''
+    mb.showinfo("rx-sislin",'''
 
-r[SISLIN]X
+rx-sislin
 Solucionador de Sistemas Lineares
 
-Versão: 0.2
+Versão: 0.3
 
-Autor: Rahul Martim Juliato
-(rahul.juliato@gmail.com)
+Autor : Rahul Martim Juliato
+E-mail: rahul.juliato@gmail.com
+URL   : www.rahuljuliato.com
 
 ''')
 
@@ -265,7 +267,7 @@ def destroi(col, lin):
 # 2.0. Definições principais da janela
 janela = tk.Tk()
 #janela.geometry("500x200")
-janela.wm_title('r[SISLIN]X v0.2')
+janela.wm_title('rx-sislin v0.3')
 janela.wm_minsize(380,220)
 janela.grid_anchor(anchor='c')
 #janela.tk_setPalette('gray')
