@@ -6,6 +6,9 @@
 # Versão  : 0.2  -  02.08.2019 - Suporte ao MacOS
 # Versão  : 0.3  -  29.12.2019 - Mudança de nome para rx-sislin (antigo rSisLinx)
 
+# For future implementation
+# ⎨ ⎧ ⎩ ⎪
+
 #---===[0. Bibliotecas]===---
 import tkinter as tk
 from tkinter import messagebox as mb

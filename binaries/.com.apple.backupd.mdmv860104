@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DateStarted</key>
+	<date>2020-01-05T19:09:32Z</date>
+	<key>FileID</key>
+	<integer>860104</integer>
+	<key>NameSpaceID</key>
+	<integer>2051655373</integer>
+	<key>NewPath</key>
+	<string>Users/rmj/github/rx-sislin/binaries/rsislinX-0.1.exe</string>
+	<key>SourcePath</key>
+	<string>Users/rmj/github/rsislinX/binaries/rsislinX.exe</string>
+</dict>
+</plist>
